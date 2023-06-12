@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prismatic Allure - Beauty Salon</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>.carousel {display:none}</style>
+        <script src="web1.js"></script>
+	</head>
+	
+	<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+	
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ps-3">
+			<div class="container-fluid pe-5">
+				<a class="navbar-brand col-8" href="#homepage" style="-webkit-text-stroke: .5px red"><h1>Prismatic Allure</h1></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="collapseNav" class="collapse navbar-collapse col-5 h4">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="#contact" style="-webkit-text-stroke: .5px yellow">Contact Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="#services" style="-webkit-text-stroke: .5px lightgreen">Services</a></li>
+						<li class="nav-item"><a class="nav-link" href="#ourTeam" style="-webkit-text-stroke: .5px cyan">Our Team</a></li>
+						<li class="nav-item"><a class="nav-link" href="#bookNow" style="-webkit-text-stroke: .5px violet">Book Now</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container-fluid">
+			<div id="homepage" style="background: linear-gradient(180deg, #C8CCD8 0%, #D5D9E4 46%, #E1E5EE 100%)" class="container-fluid row justify-content-around d-flex align-items-center">
+				<img class="col-5" src="https://img.freepik.com/free-photo/beautiul-woman-with-green-make-up-creative-color-nails_186202-7072.jpg?w=740&t=st=1686491490~exp=1686492090~hmac=f6b5fecbb722f8b1bf62ee14469a1e40ae3623743ee912beea8e72307f8e8c41">
+				<div class="col-5 text-center pt-5 mt-5">
+					<h1 style="-webkit-text-stroke: 1.5px red">Prismatic Allure</h1>
+					<div class="border border-danger mb-1"></div>
+					<p class="h4 p-2">From expert beauticians and hairstylists to quality service, we are a professional beauty salon that covers all your needs. From hairstyling to makeup to nail care, we will make you as beautiful on the outside as you are within.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="contact" class="container-fluid pt-3 mb-3">
+			<div class="border border-warning mb-1"></div>
+			<h1 class="text-center text-warning" style="-webkit-text-stroke: .5px black">Contact Us</h1>
+			<div class="border border-warning mb-4"></div>
+			<div class="row ps-5">
+				<div class="col-6 text-center">
+					<img src="https://osm.cylex-international.com/osm/staticmaplite/staticmap.php?center=43.7500158,-79.7660898&zoom=15&size=xy&maptype=tm&markers=43.7500158,-79.7660898,marker-34" alt="Map of nearby streets, roads and landmarks surrounding the business" width="700px" height="300px">
+					<p class="h5 p-2">1151 Kalahari Rd., Brampton, ON, L5N X2V</p>
+				</div>
+				<div class="col-6 text-center align-self-center">
+					<img src="https://thearchstudio.co.in/images/interiors/retail/salon/1.jpg" alt="Outside view of salon building" width="700px" height="200px">
+					<div class="border border-warning row align-items-center m-2 p-2">
+						<p class="col">Walk-ins Available!<br/>Phone: (637) 623-4325<br/>Email: prismBeauty@prism.beaut</p>
+						<p class="col">Hours of Operation:<br/>Monday - Friday: 9am - 7pm<br/>Saturday: 11am - 6pm<br/>Sundays closed!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="services" class="container-fluid bg-dark text-light pt-3 mb-3 pb-5">
+			<div class="border border-success mb-1"></div>
+			<h1 class="text-center text-success">Services</h1>
+			<div class="border border-success mb-4"></div>
+            <div id="serviceNav" class="btn-group-lg row">
+				<button type="button" class="btn btn-dark col text-success me-1" onclick="currentDiv(1)"><h4>Hair</h4></button>
+				<button type="button" class="btn btn-dark col text-success me-1" onclick="currentDiv(2)"><h4>Face</h4></button>
+				<button type="button" class="btn btn-dark col text-success me-1" onclick="currentDiv(3)"><h4>Nails</h4></button>
+            </div>
+			
+			<div id="serviceTypes" class="pt-3">
+				<div id="hair" class="carousel slide" data-bs-interval="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row justify-content-center">
+								<img class="col-4" src="https://www.byrdie.com/thmb/_MrxRoM3kd1w4RR69UjlLf4fs2o=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/oilslick-ab74e0e4e3e1474b9914d4b6b9054247.jpg" alt="Oil Slick Rainbow Hair Dye"  width="300px" height="500px">
+								<div class="col-4">
+									<h3 class="text-center text-success">Hair Dye</h3>
+									<div class="border-bottom border-success mb-3"></div>
+									<ul>
+										<li>Full Color - Dye all of your hair a certain color or choose to wild and spruce up your looks with a beautiful ombre!<p class="text-end pt-1">Cost starting from $70 - $140</br>Duration: ~1 hour</p></li>
+										<li>Highlights - Change how bright your hair looks by dyeing lighter or darker strands of hair or adding extra colors to accent your hair like in the picture.<p class="text-end pt-1">Cost starting from $60 - $150</br>Duration: 1 hour 15 min - 2 hours</p></li>
+										<li>Tips/Partial Highlights - Dye the tips or small sections of your hair only. Best choice if you aren't sure if you want a full dye.<p class="text-end pt-1">Costs starts from $40 - $80</br>Duration: 45 min - 1 hour</p></li>
+									</ul>
+									<p>Prices and Duration increase depending on the amount of colors, complexity, hair length and coverage. Extra colors add $20-$40.</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<img class="col-4" src="https://www.liveabout.com/thmb/7znWnkUHqCtuXWd3MdvGtQm62qg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/miley-cyrus-hairstyles-56a088c33df78cafdaa27fe9.jpg" alt="Short Medium and Long Hair Styles" width="300px" height="500px">
+								<div class="col-4">
+									<h3 class="text-center text-success">Hair Cut And Styling</h3>
+									<div class="border-bottom border-success mb-3"></div>
+									<ul>
+										<li>Short - Cut up until hair length is around chin-length or shorter. Typically includes undercuts, short bobs, mullets and pixie cuts.<p class="text-end pt-1">Cost starting from $35 - $140</br>Duration: 15 - 45 min</p></li>
+										<li>Medium/Long - Sholder/Neck-length or longer cuts which allow for increasingly complex styling and updos.<p class="text-end pt-1">Cost starting from $60 - $150</br>Duration: 30 min - 1 hour 15 min</p></li>
+										<li>Trim - Freshen up your current haircut and remove damaged ends.<p class="text-end pt-1">Set price of $15 or $10 for kids</br>Duration: 15 min</p></li>
+									</ul>
+									<p>Kid's start from $25, Men's from $35 and Women's from $45 and increase depending on hair type and style complexity.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+					<button class="carousel-control-prev" type="button" data-bs-target="#hair" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#hair" data-bs-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</button>
+				</div>
+					
+				<div id="face" class="carousel slide" data-bs-interval="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row justify-content-center">
+								<img class="col-4" src="https://www.beautyimageusa.com/pictures/pages/280/facial-waxing-areas.jpg" alt="3 different waxing areas: brows, upper lips, chin" width="300px" height="500px">
+								<div class="col-4">
+									<h3 class="text-center text-success">Facial Waxing/Threading</h3>
+									<div class="border-bottom border-success mb-3"></div>
+									<ul>
+										<li>Brows<p class="text-end pt-1">Costs $15</br>Duration: 10 - 20 min</p></li>
+										<li>Brow Shape and Tint<p class="text-end pt-1">Cost $35</br>Duration: 30 - 40 min</p></li>
+										<li>Upper Lip<p class="text-end pt-1">Costs $10</br>Duration: Less than 10 min</p></li>
+										<li>Chin<p class="text-end pt-1">Costs $10</br>Duration: Less than 10 min</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<img class="col-4" src="https://www.dsbarbershopmahogany.com/wp-content/uploads/elementor/thumbs/portfolio_beard-trim-4-oh85u9jw8rnmij8mv7sin99j4h22clvrat7g9lrvz4.jpg" alt="Before and After looks beard trim" width="300px" height="500px">
+								<div class="col-4">
+									<h3 class="text-center text-success">Beards</h3>
+									<div class="border-bottom border-success mb-3"></div>
+									<ul>
+										<li>Shave - Get the closest shave possible while avoiding irritation or any other issues that can come with shaving.<p class="text-end pt-1">Costs $30</br>Duration: 30 min</p></li>
+										<li>Trim - Maintain and clean up your current beard.<p class="text-end pt-1">Costs $15</br>Duration: 20 min</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<img class="col-4" src="https://cdn.shopify.com/s/files/1/1476/5372/articles/JuviasPlace-ProfessionalMakeup_4eb0b09d-b6a9-4fcb-bfe3-3269d8d0d911_1512x.jpg?v=1604688409" alt="Four different makeup applications on 4 different skin tones" width="300px" height="500px">
+								<div class="col-4">
+									<h3 class="text-center text-success">Facial/Make-up</h3>
+									<div class="border-bottom border-success mb-3"></div>
+									<ul>
+										<li>Full Facial - Cleanse and refresh your face with the full set of deep cleansing, exfoliating, mask and oil massage. You'll leave the salon stress free!<p class="text-end pt-1">Cost starting from $100</br>Duration: 1 hour - 1 hour 45 min</p></li>
+										<li>Personalized Makeup - Our professional artists will personalize your makeup application to best suit your features and skin tone, enhancing your natural beauty.<p class="text-end pt-1">Costs starting from $60 - $90</br>Duration: 30 min - 1 hour</p></li>
+										<li>Personalized Makeup + Lesson - Get a Personalized makeup session while learning everything you need to know about applying makeup for yourself from our experts.<p class="text-end pt-1">Costs $80 - $100</br>Duration: ~1 hour</p></li>
+									</ul>
+									<p>We also do bridal makeup applications.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+					<button class="carousel-control-prev" type="button" data-bs-target="#face" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#face" data-bs-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</button>
+				</div>
+					
+				<div id="nails" class="carousel slide" data-bs-interval="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row justify-content-center">
+								<img class="col-4" src="https://curage.ca/wp-content/uploads/2022/06/Spa-Manicure-768x768.jpg" alt="Filing Stage of Manicure" width="300px" height="500px">
+								<div class="col-4">
+									<h3 class="text-center text-success">Mani-/Pedi- cure</h3>
+									<div class="border-bottom border-success mb-3"></div>
+									<ul>
+										<li><p>Manicure - Filing and buffing, shaping, cuticle care and ending with a polish.</p><p class="text-end pt-1">Standard: $15 - $35; Deluxe: $30 - $40</br>Duration: 30 min - 1 hour</p></li>
+										<li><p>Pedicure - Trimming and filing, complete cuticle care, foot bath, exfoliation and massage, ending with a polish.</p><p class="text-end pt-1">Standard: $15 - $35; Deluxe: $35 - $45</br>Duration: 30 min - 1 hour 30 min</p></li>
+										<li><p>Polish - Freshen up your current polish by applying another coat or change to a new color.</p><p class="text-end pt-1">Costs $5 - $20 depending on design and polish type (Acrylic, French or Gel)</br>Duration: 5 - 15 min</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+					<button class="carousel-control-prev" type="button" data-bs-target="#nails" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#nails" data-bs-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</button>
+				</div>
+            </div>
+		</div>
+			
+		<div id="ourTeam" class="container-fluid pt-2 pb-5 mb-3">
+			<h1 class="text-center text-info border-top border-bottom border-info mb-3" style="-webkit-text-stroke: .5px black">Our Team</h1>
+			<div class="row justify-content-center">
+				<div class="card col-3 bg-info border border-info ms-3 me-3">
+					<div class="card-header bg-info row">
+						<img class="col rounded-circle" src="https://thesalonbusiness.com/wp-content/uploads/2020/03/barber-biography-picture.jpg" alt="Male long bearded Makeup Artist" width="150px" height="150px">
+						<h3 class="col align-self-center text-center">Max Ronalds</h3>
+					</div>
+					<div class="card-body">
+						<blockquote class="blockquote bg-white p-2">
+							<p>Hi! I'm Max, I've been a professional Aesthetician for over 5 years now and have only just started working at the Prismatic just a few months ago.</p>
+							<footer class="blockquote-footer text-end">Max Ronalds</footer>
+						</blockquote>
+					</div>
+				</div>
+				<div class="card col-3 bg-info border border-info ms-3 me-3">
+					<div class="card-header bg-info row">
+						<img class="col rounded-circle" src="https://thesalonbusiness.com/wp-content/uploads/2020/03/male-hair-stylist-picture.png" alt="Male Nail Artist in Blue Denim T-Shirt" width="150px" height="150px">
+						<h3 class="col align-self-center text-center">Raynold Harns</h3>
+					</div>
+					<div class="card-body">
+						<blockquote class="blockquote bg-white p-2">
+							<p>Hi, I'm an expert Nail Artist specializing in Manicures and simple and elegant nail art designs fit for all sorts of formal occasions and dresses. I look forward to working with you.</p>
+							<footer class="blockquote-footer text-end">Raynold Harns</footer>
+						</blockquote>
+					</div>
+				</div>
+				<div class="card col-3 bg-info border border-info ms-3 me-3">
+					<div class="card-header bg-info row">
+						<img class="col rounded-circle" src="https://thesalonbusiness.com/wp-content/uploads/2020/03/hairdresser-profile-picture.png" alt="Female Redheaded Hairdresser" width="150px" height="150px">
+						<h3 class="col align-self-center text-center">Alexis Dwayne</h3>
+					</div>
+					<div class="card-body">
+						<blockquote class="blockquote bg-white p-2">
+							<p>Hello! I'm a Master Hair Stylist with over 10 years of experience. I specialize in short cuts and colorful highlights to create snazzy styles that turn heads.</p>
+							<footer class="blockquote-footer text-end">Alexis Dwayne</footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="bookNow" class="container-fluid bg-dark text-light pt-5 pb-5 mb-5">
+			<h1 class="text-center mb-3" style="color: violet">Book an Appointment</h1>
+			<div class="mb-3" style="background-color: violet">.</div>
+			<form class="was-validated">
+				<h3 style="color: violet">Personal Info</h3>
+				<div class="input-group mb-3">
+					<input id="fname" type="text" class="form-control" placeholder="First Name" name="fname" required>
+					<input id="lname" type="text" class="form-control" placeholder="Last Name" name="lname" required>
+					<div class="valid-feedback">Valid</div>
+					<div class="invalid-feedback">Please fill out both these fields.</div>
+				</div>
+				<div class="mb-3">
+					<input id="email" type="text" class="form-control" placeholder="exampleEmail@email.com" name="email" required>
+					<div class="valid-feedback">Valid</div>
+					<div class="invalid-feedback">Please fill out this field.</div>
+				</div>
+				<h3 style="color: violet">Services</h3>
+				<div class="row ps-3 pe-3 mb-3">
+					<div class="col">
+						<h4>Hair</h4>
+						<div class="pb-3 ps-3">
+							<h5>Hair Color</h5>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="hairCheck1" name="hair1" onclick="calc(70)">
+								<label class="form-check-label">Full Color</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="hairCheck2" name="hair2" onclick="calc(60)">
+								<label class="form-check-label">Highlights</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="hairCheck3" name="hair3" onclick="calc(40)">
+								<label class="form-check-label">Tips/Partial Highlights</label>
+							</div>
+						</div>
+						<div class="col ps-3">
+							<h5>Hair Cuts and Styles</h5>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="hairCheck4" name="hair4" onclick="calc(35)">
+								<label class="form-check-label">Short</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="hairCheck5" name="hair5" onclick="calc(60)">
+								<label class="form-check-label">Medium/Long</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="hairCheck6" name="hair6" onclick="calc(15)">
+								<label class="form-check-label">Trim</label>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<h4>Face</h4>
+						<div class="pb-3 ps-3">
+							<h5>Waxing/Threading</h5>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck1" name="face1" onclick="calc(15)">
+								<label class="form-check-label">Brows</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck2" name="face2" onclick="calc(35)">
+								<label class="form-check-label">Brow Shape and Tint</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck3" name="face3" onclick="calc(10)">
+								<label class="form-check-label">Upper Lip</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck4" name="face4" onclick="calc(10)">
+								<label class="form-check-label">Chin</label>
+							</div>
+						</div>
+						<div class="col pb-3 ps-3">
+							<h5>Beards</h5>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck5" name="face5" onclick="calc(30)">
+								<label class="form-check-label">Shave</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck6" name="face6" onclick="calc(15)">
+								<label class="form-check-label">Trim</label>
+							</div>
+						</div>
+						<div class="col ps-3">
+							<h5>Facial/Make-up</h5>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck7" name="face7" onclick="calc(100)">
+								<label class="form-check-label">Full Facial</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck8" name="face8" onclick="calc(60)">
+								<label class="form-check-label">Personalized Make-up</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="faceCheck9" name="face9" onclick="calc(80)">
+								<label class="form-check-label">Personalized Make-up + Lesson</label>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<h4>Nails</h4>
+						<div class="pb-3 ps-3">
+							<h5>Manicure/Pedicure and Polish</h5>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="nailsCheck1" name="nails1" onclick="calc(70)">
+								<label class="form-check-label">Manicure</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="nailsCheck2" name="nails2" onclick="calc(60)">
+								<label class="form-check-label">Pedicure</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="nailsCheck3" name="nails3" onclick="calc(40)">
+								<label class="form-check-label">Polish</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3 style="color: violet">Attending Employee</h3>
+				<div class="container-fluid mb-3">
+					<select class="form-select" multiple="multiple">
+						<option value="1">Max Ronalds - Aesthetician</option>
+						<option value="2">Raynold Harns - Nail Artist</option>
+						<option value="3">Alexis Dwayne - Hair Stylist</option>
+					</select>
+				</div>
+				<h3 style="color: violet">Date and Time</h3>
+				<input id="appointment" type="datetime-local" class="mb-3" name="appointment" min="2023-06-12">
+				<h3 style="color: violet">Costs</h3>
+				<div class="row mb-3">
+					<h4 id="noTaxes" class="col">Total: $0.00</h4>
+					<h4 id="taxes" class="col">Total +Taxes: $0.00</h4>
+				</div>
+				<input type="button" onclick="alert('Booking Confirmed!')" value="Book Now">
+			</form>
+		</div>
+		
+		<footer class="fixed-bottom bg-dark text-light p-1">
+			<div class="text-center">To see more of our works, follow us on:</div>
+			<div class="row justify-content-center pt-2">
+				<a class="col-auto" href="https://www.facebook.com/"><img src="facebookIcon.png" alt="Link to Facebook page" width="40px" height="40px"></a>
+				<a class="col-auto" href="https://twitter.com/"><img src="twitterIcon.png" alt="Link to Twitter page" width="40px" height="40px"></a>
+				<a class="col-auto" href="https://www.youtube.com/"><img src="youtubeIcon.png" alt="Link to Youtube channel" width="40px" height="40px"></a>
+				<a class="col-auto" href="https://www.instagram.com/"><img src="instagramIcon.png" alt="Link to Instagram page" width="40px" height="40px"></a>
+			</div>
+		</footer>
+	</body>
+</html>
